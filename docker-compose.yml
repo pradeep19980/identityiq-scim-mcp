@@ -1,0 +1,8 @@
+# Local demo only: stdio does not expose an HTTP port.
+services:
+  mcp:
+    build: .
+    environment:
+      DEMO_MODE: "true"
+      MCP_TRANSPORT: stdio
+    stdin_open: true
